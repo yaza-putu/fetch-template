@@ -10,7 +10,9 @@ template fetch to replace jquery ajax
           "X-Requested-With": "XMLHttpRequest",
           "X-CSRF-Token": token, //you can use it on delete with method post or post data without @csrf  token laravel
     },
-    body:, //data form on method post
+    body:JSON.stringify({
+                'id': id
+    }),  //use json.stringfy if you create manual data object
   })
   .then(response => {
     if (response.ok) {
