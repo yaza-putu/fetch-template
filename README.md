@@ -8,7 +8,7 @@ template fetch to replace jquery ajax
           "Content-Type": "application/json",
           "Accept": "application/json",
           "X-Requested-With": "XMLHttpRequest",
-          "X-CSRF-Token": token, //you can use it on delete with method post or post data without @csrf  token laravel inside form
+          "X-CSRF-Token": token, //you can use it on delete with method post or post data without @csrf  token laravel form inside
     },
     body:JSON.stringify({
                 'id': id
