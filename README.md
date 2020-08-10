@@ -29,6 +29,5 @@ template fetch to replace jquery ajax
   .catch(function(error) {
     console.log(`Error: ${error.message}`);
   });
-});
 
 ```
